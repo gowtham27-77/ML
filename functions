@@ -1,0 +1,195 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "fa9b51df-535e-409a-8208-574d103f3be2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# write a user defined function to compute average\n",
+    "# Define function (resuable)\n",
+    "def mean_value(given_list):\n",
+    "    total = sum(given_list)\n",
+    "    average_value = total/len(given_list)\n",
+    "    return average_value"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "fa1cb346-5704-47ea-a5cc-71bd07bf7fdb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5.5"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#call the function\n",
+    "L = [1,2,3,4,5,6,7,8,9,10]\n",
+    "mean_value(L)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "2dd0c28a-a3a8-4aae-86ec-83b8b68c218a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#greetings\n",
+    "def greet(name):\n",
+    "    print(f\"Good Morning {name}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "721acb1f-a6aa-482d-b392-6b07d9e5a7ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good Morning Gowtham\n"
+     ]
+    }
+   ],
+   "source": [
+    "greet(\"Gowtham\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "1ff6f056-2b53-4954-bdc8-a6f520b79480",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#lambda functions\n",
+    "greet = lambda name : print(f\"Good Morning {name}!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "108e7e5b-a0c6-4602-b39f-4d0ba6de07ef",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good Morning Gowtham!\n"
+     ]
+    }
+   ],
+   "source": [
+    "greet(\"Gowtham\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "0c158bf4-5080-4660-a48c-d3a898cd9816",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#write the lambda function to compute the 3 average numbers\n",
+    "average = lambda a,b,c : a+b+c/3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "d2fc2369-c6e1-4bc8-80bf-7fc2bc42c8c5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "50.0"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "average(3,45,6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "3ead7461-f100-4663-b20a-8734979d9f4e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#lambda function with list comprehension\n",
+    "even = lambda L : [x for x in L if x%2 == 0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "bb6aabcb-3796-4815-923d-803cccb79897",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[64, 78, 88]"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_list = [35,53,64,63,78,47,88]\n",
+    "even(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "402224a2-6a48-443e-8a7c-2f2257a0bc9d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
